@@ -48,3 +48,4 @@ services:
       - ROOT_URL=https://${NGINX_SERVER_NAME}
       - PORT=${HACCHUI_PORT}
       - METEOR_SETTINGS
+      -
