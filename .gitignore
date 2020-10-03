@@ -1,0 +1,6 @@
+.idea/
+*.iml
+.DS_Store
+/config/
+/data/certbot/
+/data/nginx/app.conf
