@@ -5,9 +5,9 @@
 # substitutes them into the docker-compose.yml configuration file.
 # See: https://docs.docker.com/compose/compose-file/#variable-substitution
 
-# Source and export NGINX_SERVER_NAME for Nginx and HACC-Hui services in docker-compose.yml. Passed on to View as ROOT_URL.
+# Source and export NGINX_SERVER_NAME for Nginx and HACC-Hui services in docker-compose.yml. Passed on to HACCHui as ROOT_URL.
 . ./config/nginx/nginx.env
-export NGINX_SERVER_NAME
+export NGINX_SERVER_NAME=hacchui.ics.hawaii.edu
 
 # HACCHui Config Environment Var
 export METEOR_SETTINGS=$(cat ./config/settings.production.json)

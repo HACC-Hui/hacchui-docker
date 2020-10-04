@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.3'
 
 services:
   mongo:
@@ -48,4 +48,5 @@ services:
       - ROOT_URL=https://${NGINX_SERVER_NAME}
       - PORT=${HACCHUI_PORT}
       - METEOR_SETTINGS
-      -
+      - SLACK_SIGNING_SECRET
+      - SLACK_BOT_TOKEN
